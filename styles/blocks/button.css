@@ -1,0 +1,54 @@
+[class^="button"] {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  padding: 0 30px;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  color: var(--blue50);
+  font-family: var(--font-unbounded);
+  font-size: 14px;
+  font-weight: 800;
+  background-color: var(--blue500);
+}
+
+[class^="button"]:hover {
+  color: var(--n8);
+}
+
+.button-stroke {
+  border: 2px solid var(--n6);
+  background: none;
+  color: var(--n2);
+}
+
+.button-stroke:hover {
+  border-color: transparent;
+  background-color: var(--n1);
+  color: var(--n8);
+}
+
+.button-black {
+  background-color: var(--n1);
+}
+
+.button-black:hover {
+  background: var(--n2);
+}
+
+.svg-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--n8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--n6);
+  flex-shrink: 0;
+}
+
+.svg-button svg {
+  stroke: var(--n2);
+}
