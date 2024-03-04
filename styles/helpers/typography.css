@@ -8,6 +8,7 @@
   font-family: var(--font-unbounded);
   color: var(--n950);
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 .hero {
@@ -68,14 +69,14 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
-  font-family: var(--font-inter);
+  font-family: var(--font-satoshi-regular);
 }
 
-.body-2-semibold {
+.body-2-bold {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
-  font-family: var(--font-inter);
+  font-family: var(--font-satoshi-bold);
 }
 
 .caption {
@@ -121,14 +122,14 @@
 }
 
 .btn-1 {
-  font-family: var(--font-inter);
+  font-family: var(--font-satoshi-bold);
   font-size: 18px;
   font-weight: 700;
   line-height: 16px;
 }
 
 .btn-2 {
-  font-family: var(--font-inter);
+  font-family: var(--font-satoshi-bold);
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;

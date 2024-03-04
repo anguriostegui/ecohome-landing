@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  text-align: center;
+}
+
+.title {
+  color: var(--blue500);
+  margin-bottom: 8px;
+}
+
+.description {
+  color: var(--n950);
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 24px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
