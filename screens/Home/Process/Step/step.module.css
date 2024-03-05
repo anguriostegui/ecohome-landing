@@ -1,0 +1,9 @@
+.title {
+  color: var(--n950);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.description {
+  color: var(--n400);
+}

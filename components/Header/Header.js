@@ -30,6 +30,7 @@ const navLinks = [
 
 export default function Header() {
   const [visible, setVisible] = React.useState(false);
+  const [changeColor, setChangeColor] = React.useState(false);
 
   const scrollToSection = (anchor) => {
     const section = document.getElementById(anchor);
@@ -39,26 +40,35 @@ export default function Header() {
     setVisible(false);
   };
 
-  //   const changeBackground = () => {
-  //     const changeColorScrollPosition = 100;
+  const changeBackground = () => {
+    const changeColorScrollPosition = 100;
 
-  //     if (window.scrollY >= changeColorScrollPosition) {
-  //       setChangeColor(true);
-  //     } else {
-  //       setChangeColor(false);
-  //     }
-  //   };
+    if (window.scrollY >= changeColorScrollPosition) {
+      setChangeColor(true);
+    } else {
+      setChangeColor(false);
+    }
+  };
 
-  //   React.useEffect(() => {
-  //     window.addEventListener("scroll", changeBackground);
+  React.useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
 
-  //     return () => {
-  //       window.removeEventListener("scroll", changeBackground);
-  //     };
-  //   }, []);
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
+
+  const onPress = (anchor) => {
+    setVisible(!visible);
+    scrollToSection();
+  };
 
   return (
-    <header className={styles.header}>
+    <header
+      className={cn(styles.header, {
+        [styles.changeColor]: changeColor,
+      })}
+    >
       <div className={cn("container", styles.container)}>
         <Logo className={cn("body-2-semibold", styles.logo)} />
 
@@ -74,7 +84,14 @@ export default function Header() {
               </button>
             ))}
           </div>
-          <button className={cn("button", styles.button)}>Purchase $59</button>
+          <a
+            href="https://ui8.net/angel-uriostegui/products/ecohome-ecommerce-react-native-app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn("button", styles.button)}
+          >
+            Purchase $59
+          </a>
         </div>
 
         <button

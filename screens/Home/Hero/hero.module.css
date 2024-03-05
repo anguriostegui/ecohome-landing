@@ -1,3 +1,7 @@
+.section {
+  padding-top: 200px;
+}
+
 .title_container {
   max-width: 800px;
   margin: 0 auto;
@@ -58,6 +62,10 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding-top: 156px;
+  }
+
   .title {
     font-size: 32px;
     line-height: 40px;
