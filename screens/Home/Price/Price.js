@@ -19,8 +19,9 @@ export default function Price() {
           </div>
 
           <div className={cn("body-2", styles.description)}>
-            Launch your e-commerce app today with the EcoHome UI Kit, only $59.
-            Ready-to-use React Native components and Expo support included!
+            Get to work on your e-commerce app today with the EcoHome UI Kit,
+            only $59. Ready-to-use React Native components and Expo support
+            included!
           </div>
 
           <a
